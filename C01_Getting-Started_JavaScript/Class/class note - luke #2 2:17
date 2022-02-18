@@ -1,0 +1,54 @@
+//*string*//
+"Anything inside of quotations"
+"Or they can be single quotes"
+"It/s'
+"2"
+
+//*number*\\
+1//1.0
+10.0//10
+
+//*boolean*||
+true;
+false
+//some text=>truthy
+//""+>falsy
+
+??*special*\\
+undefined;
+null
+NaN;
+
+//*object*\\
+const user={
+    name:"will",
+    password:12345,
+    isInstrutir:true
+}
+
+user.name// "Will"
+user["name"];//"Will"
+
+//*array*\\
+const names=["Cheri", "Natalie","Gabe"]
+const misc = ["Train",10, {iceCubes: 10, pickles:false},false];
+
+names[0];//"Cheri"
+misc[2].pickles;// false
+
+//* Declaring Variables*\\
+var powelLevel=9001;
+
+let currentMood; 
+currentMood="Pensive";
+currentMood="Disgruntled";
+console.log(currentMood)
+
+const vehicle=[
+    make: "Porches",
+    model:"911 Carrera 4S",
+    price:[
+        //...
+    ],
+};
+vehicle.make=

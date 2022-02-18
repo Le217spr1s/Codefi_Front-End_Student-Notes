@@ -2,7 +2,7 @@
 const headingOne = document.querySelector("h1");
 
 // Selects the element with a class name of "heading-two"
-const headingTwo = document.querySelector(".heading-two");
+const headingTwo = document.querySelector("CodeFi Boot Camp");
 
 // Selects the body element
 const bodyEl = document.querySelector("body");
