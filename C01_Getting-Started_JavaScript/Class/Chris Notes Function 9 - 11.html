@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with Javascript</title>
+<style>
+    body { padding: 30px; }
+</style> 
+</head>
+<body>
+    
+ <div class="jumbotron text-center">
+  <button type="button" class="btn btn-danger" onclick="saySomething('this is the first button')">
+  My button
+  </button>
+  <button type="button" class="btn btn-danger" onclick="saySomething('this is the second button')">
+    My 2nd button
+    </button>
+ </div>
+
+ <!-- start javascript -->
+ <script>
+     const hero = {
+         name: ' Peter Parker',
+         alias: 'Spiderman',
+         catchphrase: 'Great Power comes with great responsibility',
+         speak: function() {
+             return 'Attention!' + this.catchphrase;
+         },
+         attack: function(sound){
+             //return '(swoosh)' + sound;
+             return `(punch bad guy) ${sound}`;
+         }
+              };
+
+    //access a property 
+    const thingtoLookfor = 'alias';
+
+    console.log (hero.name);
+    console.log (hero ['name']);
+    console.log (hero [thingtoLookfor])
+
+    console.log(hero.speak());
+
+  function saySomething(message = 'goodbye', whisper = false) {   
+   
+   if (whisper) {
+    console.log(`%c${message}`, 'font-size:5px;');
+   }else{
+    console.log(message);
+   }
+  }
+  saySomething('hello', true);
+  saySomething('my name is Luke', true);
+  saySomething();
+  
+  //function squared(a) {
+      //return a*a;
+  //}
+
+  //const newSquared = squared(3)
+  //console.log(newSquared);
+  
+
+  const squared= (a) => {
+    return a * a;
+  }
+  const otherSquared = squared;
+
+  punch();
+
+  function punch() {
+    console.log('punch');
+  }
+ </script>
+</body>
+</html>
